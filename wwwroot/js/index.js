@@ -28,21 +28,25 @@
             }
         });
 
-        // Smooth scrolling for anchor links
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({
-                        behavior: 'smooth',
-                        block: 'start'
-                    });
-                    // Close mobile menu if open
-                    navLinks.classList.remove('active');
-                }
+// Smooth scrolling for anchor links
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+            const navbarHeight = document.getElementById('navbar').offsetHeight;
+            const targetPosition = target.offsetTop - navbarHeight;
+
+            window.scrollTo({
+                top: targetPosition,
+                behavior: 'smooth'
             });
-        });
+
+            // Close mobile menu if open
+            navLinks.classList.remove('active');
+        }
+    });
+});
 
         // Intersection Observer for animations
         const observerOptions = {

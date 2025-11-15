@@ -17,97 +17,97 @@ build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PesqueFaleCSharp
 build_property.RootNamespace = PesqueFaleCSharp
-build_property.ProjectDir = C:\Users\Edilaine\Downloads\PesqueFaleCSharp_Admin_CRUD\home\pi\PesqueFaleCSharp\
+build_property.ProjectDir = C:\Users\dani0\Music\PesqueFaleCSharp\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Edilaine\Downloads\PesqueFaleCSharp_Admin_CRUD\home\pi\PesqueFaleCSharp
+build_property.MSBuildProjectDirectory = C:\Users\dani0\Music\PesqueFaleCSharp
 build_property._RazorSourceGeneratorDebug = 
 build_property.EffectiveAnalysisLevelStyle = 8.0
 build_property.EnableCodeStyleSeverity = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Admin/Index.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Admin/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Home/Home.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Home/Home.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxIb21lLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Home/Index.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Home/MelhoresLocais.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Home/MelhoresLocais.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxNZWxob3Jlc0xvY2Fpcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Home/Pesquisar.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Home/Pesquisar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQZXNxdWlzYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Home/Privacy.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Home/Sobrenos.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Home/Sobrenos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxTb2JyZW5vcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Pescadores/Create.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Pescadores/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzY2Fkb3Jlc1xDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Pescadores/Delete.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Pescadores/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzY2Fkb3Jlc1xEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Pescadores/Edit.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Pescadores/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzY2Fkb3Jlc1xFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Pescadores/Index.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Pescadores/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVzY2Fkb3Jlc1xJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Shared/Error.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Shared/_LayoutAdmin.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Shared/_LayoutAdmin.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXRBZG1pbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Shared/_Sidebar.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Shared/_Sidebar.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Usuario/Login.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Usuario/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Usuario/Notificacao.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Usuario/Notificacao.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xOb3RpZmljYWNhby5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Usuario/Perfil.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Usuario/Perfil.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xQZXJmaWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/_ViewImports.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/_ViewStart.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Edilaine/Downloads/PesqueFaleCSharp_Admin_CRUD/home/pi/PesqueFaleCSharp/Views/Shared/_Layout.cshtml]
+[C:/Users/dani0/Music/PesqueFaleCSharp/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-0joqyvq5x2

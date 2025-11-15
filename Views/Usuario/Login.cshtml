@@ -1,6 +1,9 @@
 ﻿@{
     Layout = null;
     ViewData["Title"] = "Login";
+
+    var successMessage = TempData["Success"] as string;
+    var errorMessage = TempData["Error"] as string;
 }
 
 <!DOCTYPE html>
@@ -14,12 +17,38 @@
     <!--CSS-->
     <link rel="stylesheet" href="~/css/index.css" />
     <link rel="stylesheet" href="~/css/login.css" />
+    <link rel="stylesheet" href="~/css/toast.css" />
     <link rel="stylesheet"
-
           href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
 </head>
 
 <body class="login-page">
+    @* Toasts renderizados quando TempData é definido *@
+    @if (!string.IsNullOrEmpty(successMessage))
+    {
+        <div id="siteToast" class="site-toast success" role="status" aria-live="polite">
+            <div class="toast-content">
+                <span class="material-symbols-outlined toast-icon">check_circle</span>
+                <div class="toast-message">@successMessage</div>
+            </div>
+            <button class="toast-close-btn" aria-label="Fechar">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+    }
+    else if (!string.IsNullOrEmpty(errorMessage))
+    {
+        <div id="siteToast" class="site-toast error" role="alert" aria-live="assertive">
+            <div class="toast-content">
+                <span class="material-symbols-outlined toast-icon">error</span>
+                <div class="toast-message">@errorMessage</div>
+            </div>
+            <button class="toast-close-btn" aria-label="Fechar">
+                <span class="material-symbols-outlined">close</span>
+            </button>
+        </div>
+    }
+
     <div class="wrapper">
         <!-- LADO ESQUERDO: imagem profissional -->
         <aside class="side-image" aria-hidden="true">
@@ -55,7 +84,8 @@
                     </div>
                     <button type="submit" class="btn">ENTRA</button>
                     <div class="login-register">
-                        <p>Não tem conta aqui?
+                        <p>
+                            Não tem conta aqui?
                             <a asp-controller="Usuario" asp-action="Registro" class="register-link">Cadastre-se aqui</a>
                         </p>
                     </div>
@@ -68,11 +98,11 @@
                     <img src="~/assets/login/logo2.png" alt="Logo">
                 </div>
                 <h2>CADASTRO</h2>
-                <form asp-controller="Index" asp-action="Register" method="post">
+                <form asp-controller="Usuario" asp-action="Registro" method="post">
                     <div class="input-box">
                         <span class="material-symbols-outlined icon">person</span>
-                        <input type="text" required placeholder=" " name="username" />
-                        <label>Usuário</label>
+                        <input type="text" required placeholder=" " name="nome" />
+                        <label>Nome de Usuário</label>
                         <span class="input-hint">Sem espaços ou caracteres especiais</span>
                     </div>
                     <div class="input-box">
@@ -83,13 +113,20 @@
                     </div>
                     <div class="input-box">
                         <span class="material-symbols-outlined icon">password</span>
-                        <input type="password" required placeholder=" " class="password-input" name="password" />
-                        <label>senha</label>
+                        <input type="password" required placeholder=" " class="password-input" name="senha" />
+                        <label>Senha</label>
                         <span class="input-hint">Entre 6 a 10 caracteres</span>
                         <span class="material-symbols-outlined toggle-password">visibility</span>
                     </div>
+                    <div class="input-box">
+                        <span class="material-symbols-outlined icon">password</span>
+                        <input type="password" required placeholder=" " class="password-input" name="confirmar_senha" />
+                        <label>Confirmar Senha</label>
+                        <span class="input-hint">Digite a senha novamente</span>
+                        <span class="material-symbols-outlined toggle-password">visibility</span>
+                    </div>
                     <div class="remember-forgot">
-                        <label><input type="checkbox" name="acceptTerms">Eu aceito os termos &amp; condições.</label>
+                        <label><input type="checkbox" name="acceptTerms" required>Eu aceito os termos &amp; condições.</label>
                     </div>
                     <button type="submit" class="btn">Cadastrar-se</button>
                     <div class="login-register">
@@ -101,6 +138,7 @@
     </div>
     <!--Script-->
     <script src="~/js/login.js"></script>
+    <script src="~/js/toast.js"></script>
 </body>
 
 </html>

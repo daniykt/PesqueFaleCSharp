@@ -115,10 +115,6 @@ namespace PesqueFaleCSharp.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_pescador"));
 
-                    b.Property<string>("confirmar_senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
                     b.Property<string>("email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

@@ -12,7 +12,7 @@ using PesqueFaleCSharp.Data;
 namespace PesqueFaleCSharp.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20251029183556_InitialCreate")]
+    [Migration("20251114010435_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -117,10 +117,6 @@ namespace PesqueFaleCSharp.Migrations
                         .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id_pescador"));
-
-                    b.Property<string>("confirmar_senha")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("email")
                         .IsRequired()

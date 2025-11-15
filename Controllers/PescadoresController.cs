@@ -1,5 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 using PesqueFaleCSharp.Data;
 using PesqueFaleCSharp.Models;
 using System.Threading.Tasks;
@@ -36,7 +37,13 @@ namespace PesqueFaleCSharp.Controllers
         {
             if (ModelState.IsValid)
             {
-                // TODO: Implementar hash da senha antes de salvar
+                // Hash da senha antes de salvar
+                var hasher = new PasswordHasher<Pescador>();
+                pescador.senha = hasher.HashPassword(pescador, pescador.senha);
+
+                // confirmar_senha é [NotMapped] — opcional limpar
+                pescador.confirmar_senha = null;
+
                 _context.Add(pescador);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
@@ -59,7 +66,7 @@ namespace PesqueFaleCSharp.Controllers
             }
             ViewData["Title"] = "Editar Pescador";
             // Limpa o campo de senha para não vazar o hash/valor anterior
-            pescador.senha = string.Empty; 
+            pescador.senha = string.Empty;
             pescador.confirmar_senha = string.Empty;
             return View(pescador);
         }
@@ -74,21 +81,39 @@ namespace PesqueFaleCSharp.Controllers
                 return NotFound();
             }
 
+            // Se não informou nova senha, remover validação de senha/confirmar (permitir editar sem tocar senha)
+            if (string.IsNullOrWhiteSpace(pescador.senha))
+            {
+                ModelState.Remove(nameof(Pescador.senha));
+                ModelState.Remove(nameof(Pescador.confirmar_senha));
+            }
+
             if (ModelState.IsValid)
             {
                 try
                 {
-                    // TODO: Implementar hash da senha antes de salvar
                     var existingPescador = await _context.Pescadores.AsNoTracking().FirstOrDefaultAsync(p => p.id_pescador == id);
-                    
-                    if (string.IsNullOrEmpty(pescador.senha))
+
+                    if (existingPescador == null)
                     {
-                        // Se a senha não foi alterada, mantém a senha anterior (hash)
-                        pescador.senha = existingPescador.senha;
-                        pescador.confirmar_senha = existingPescador.senha; // Para passar na validação do Compare
+                        return NotFound();
                     }
-                    // Caso a senha tenha sido alterada, o novo valor já está em pescador.senha/confirmar_senha
-                    
+
+                    if (string.IsNullOrWhiteSpace(pescador.senha))
+                    {
+                        // mantém hash existente
+                        pescador.senha = existingPescador.senha;
+                    }
+                    else
+                    {
+                        // novo hash para nova senha
+                        var hasher = new PasswordHasher<Pescador>();
+                        pescador.senha = hasher.HashPassword(pescador, pescador.senha);
+                    }
+
+                    // confirmar_senha não é persistido
+                    pescador.confirmar_senha = null;
+
                     _context.Update(pescador);
                     await _context.SaveChangesAsync();
                 }
@@ -136,7 +161,7 @@ namespace PesqueFaleCSharp.Controllers
             {
                 _context.Pescadores.Remove(pescador);
             }
-            
+
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }

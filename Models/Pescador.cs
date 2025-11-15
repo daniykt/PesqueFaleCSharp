@@ -1,4 +1,5 @@
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace PesqueFaleCSharp.Models
 {
@@ -19,6 +20,7 @@ namespace PesqueFaleCSharp.Models
         [DataType(DataType.Password)]
         public string senha { get; set; }
 
+        [NotMapped]
         [Required(ErrorMessage = "O campo Confirmar Senha é obrigatório.")]
         [DataType(DataType.Password)]
         [Compare("senha", ErrorMessage = "A Senha e a Confirmação de Senha não correspondem.")]

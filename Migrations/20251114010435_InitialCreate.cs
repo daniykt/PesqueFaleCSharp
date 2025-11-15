@@ -41,8 +41,7 @@ namespace PesqueFaleCSharp.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     nome = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     email = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    senha = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    confirmar_senha = table.Column<string>(type: "nvarchar(max)", nullable: false)
+                    senha = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -24,7 +24,6 @@ wwwroot\css\admin.css
 wwwroot\css\contador.css
 wwwroot\css\global.css
 wwwroot\css\home.css
-wwwroot\css\index.css
 wwwroot\css\locaisavaliados.css
 wwwroot\css\login.css
 wwwroot\css\notificacao.css
@@ -99,3 +98,4 @@ wwwroot\lib\jquery\dist\jquery.js
 wwwroot\lib\jquery\dist\jquery.min.js
 wwwroot\lib\jquery\dist\jquery.min.map
 wwwroot\lib\jquery\LICENSE.txt
+wwwroot\css\index.css

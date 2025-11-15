@@ -1,7 +1,6 @@
         * {
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
         }
 
         :root {
@@ -22,17 +21,17 @@
         }
 
         /* Navigation */
-        nav {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            background: rgba(255, 255, 255, 0.95);
-            backdrop-filter: blur(10px);
-            z-index: 1000;
-            padding: 1rem 0;
-            transition: all 0.3s ease;
-
-        }
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    padding: 1rem 0;
+    transition: all 0.3s ease;
+    height: 70px; /* Adicione uma altura fixa para a navbar */
+}
 
         nav.scrolled {
             box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -103,14 +102,14 @@
         }
 
         /* Hero Section */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            align-items: center;
-            background: linear-gradient(135deg, var(--primary-white) 0%, var(--gray-light) 100%);
-            position: relative;
-            overflow: hidden;
-        }
+.hero {
+    min-height: 65vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, var(--primary-white) 0%, var(--gray-light) 100%);
+    position: relative;
+    overflow: hidden;
+}
 
         .hero-content {
             max-width: 1200px;
@@ -293,6 +292,7 @@
             grid-template-columns: 1fr 1fr;
             gap: 4rem;
             align-items: center;
+
         }
 
         .about-text h2 {
@@ -465,7 +465,7 @@
         }
 
         /* Responsive */
-        @media (max-width: 768px) {
+        @media (max-width: 799px) {
             .nav-links {
                 display: none;
                 position: absolute;
@@ -534,4 +534,17 @@
             .team-grid {
                 grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
             }
+        }
+
+        @media (min-width: 800px) {
+            .hero {
+                margin-top: 50px; 
+             }
+
+            .hero-image {
+                max-width: 100%;
+                height: auto;
+                margin-top: 5rem;
+            }
+
         }
