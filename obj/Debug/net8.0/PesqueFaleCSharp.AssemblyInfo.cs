@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("PesqueFaleCSharp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+38a58ac49bddef976a808735462921556a1fb096")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1abad44040a71b738ccf3ec4eb73a49ef4495474")]
 [assembly: System.Reflection.AssemblyProductAttribute("PesqueFaleCSharp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("PesqueFaleCSharp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

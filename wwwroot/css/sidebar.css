@@ -155,7 +155,7 @@ body {
 }
 
 /* ========== RESPONSIVIDADE - MOBILE ========== */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
 
   /* Header horizontal fixo no topo */
   .sidebar {
@@ -390,7 +390,7 @@ body {
 }
 
 /* Esconder botão mobile no desktop */
-@media (min-width: 769px) {
+@media (min-width: 900px) {
   .mobile-menu-btn {
     display: none !important;
   }
@@ -433,7 +433,7 @@ body.dark-mode .theme-btn:hover {
 }
 
 /* Tema escuro mobile */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
   body.dark-mode .sidebar {
     border-bottom-color: var(--gray-700);
   }

@@ -44,6 +44,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 
             // Close mobile menu if open
             navLinks.classList.remove('active');
+            // Reset hamburger menu animation
+            const spans = menuToggle.querySelectorAll('span');
+            spans[0].style.transform = 'none';
+            spans[1].style.opacity = '1';
+            spans[2].style.transform = 'none';
         }
     });
 });

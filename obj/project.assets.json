@@ -5056,23 +5056,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Edilaine\\.nuget\\packages\\": {},
+    "C:\\Users\\dani0\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Edilaine\\Downloads\\PesqueFaleCSharp_Admin_CRUD\\home\\pi\\PesqueFaleCSharp\\PesqueFaleCSharp.csproj",
+      "projectUniqueName": "C:\\Users\\dani0\\Music\\PesqueFaleCSharp\\PesqueFaleCSharp.csproj",
       "projectName": "PesqueFaleCSharp",
-      "projectPath": "C:\\Users\\Edilaine\\Downloads\\PesqueFaleCSharp_Admin_CRUD\\home\\pi\\PesqueFaleCSharp\\PesqueFaleCSharp.csproj",
-      "packagesPath": "C:\\Users\\Edilaine\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Edilaine\\Downloads\\PesqueFaleCSharp_Admin_CRUD\\home\\pi\\PesqueFaleCSharp\\obj\\",
+      "projectPath": "C:\\Users\\dani0\\Music\\PesqueFaleCSharp\\PesqueFaleCSharp.csproj",
+      "packagesPath": "C:\\Users\\dani0\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\dani0\\Music\\PesqueFaleCSharp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Edilaine\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\dani0\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -5143,7 +5143,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.306/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
