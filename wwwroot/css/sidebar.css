@@ -257,27 +257,28 @@ body {
   }
 
   /* Menu fullscreen quando aberto */
-  .nav-menu {
-    position: fixed;
-    top: var(--header-height);
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 100%;
-    height: calc(100vh - var(--header-height));
-    background: var(--white);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem;
-    box-sizing: border-box;
-    transform: translateX(-100%);
-    opacity: 0;
-    visibility: hidden;
-    transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
-    z-index: 999;
-    justify-content: flex-start; /* Alterado para começar do topo */
-  }
+    .nav-menu {
+        position: fixed;
+        top: var(--header-height);
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: calc(100vh - var(--header-height));
+        background: var(--white);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 2rem;
+        box-sizing: border-box;
+        transform: translateX(-100%);
+        opacity: 0;
+        visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease, visibility 0.3s ease;
+        z-index: 999;
+        justify-content: flex-start; /* Alterado para começar do topo */
+        overflow: scroll;
+    }
 
   /* Menu visível quando aberto */
   .sidebar.open .nav-menu {
@@ -313,18 +314,15 @@ body {
   }
 
   /* Footer do menu (botão de tema) no final - MOBILE FIX */
-  .sidebar-footer {
-    position: fixed;
-    bottom: 2rem;
-    left: 0;
-    right: 0;
-    display: none;
-    justify-content: center;
-    box-sizing: border-box;
-    padding: 0 2rem;
-    z-index: 1100; /* garante que fique acima do nav-menu (z-index:999) */
-    pointer-events: auto; /* garante interação quando sobreposto */
-  }
+    .sidebar-footer {
+        position: static; /* Remove posicionamento fixo */
+        display: none;
+        padding: 1rem;
+        border-top: 1px solid var(--gray-200);
+        margin-top: auto; /* Empurra para o final do container flex */
+        width: 100%;
+        box-sizing: border-box;
+    }
 
   .sidebar.open .sidebar-footer {
     display: flex;
@@ -337,19 +335,19 @@ body {
     display: flex;
   }
 
-  .theme-btn {
-    padding: 1rem 2rem;
-    background: var(--gray-100);
-    border: 2px solid var(--gray-200);
-    color: var(--gray-700);
-    border-radius: 50px;
-    margin: 0;
-    margin-top: 2rem;
-    white-space: nowrap;
-    width: 100%;
-    max-width: 100%;
-    justify-content: center;
-  }
+    .theme-btn {
+        padding: 1rem 2rem;
+        background: var(--gray-100);
+        border: 2px solid var(--gray-200);
+        color: var(--gray-700);
+        border-radius: 50px;
+        margin: 1rem auto 0; /* Centraliza */
+        margin-top: 2rem;
+        white-space: nowrap;
+        width: 100%;
+        max-width: 200%;
+        justify-content: center;
+    }
 
   .theme-btn:hover {
     background: var(--primary);
